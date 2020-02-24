@@ -1,0 +1,150 @@
+nav {
+	background-color:#2fd442;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;	
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-family:Lucida Console;
+  font-size:30px;
+  user-select:none;
+}
+
+li a:hover {
+  background-color:#3a9144;
+}
+body   {
+	background-color:white;
+}
+#h1 {
+	color:black;
+	font-size:30px;
+	margin:0px 0px 20px 0px;
+	letter-spacing: -3px;
+	line-height: 0.0;
+	text-align:center;
+	font-family:Verdana;
+	text-shadow: 2px 3px #2fd442;
+	user-select:none;
+}
+#wersja {
+	color:black;
+	font-size:20px;
+	margin:10px 0px 30px 0px;
+	letter-spacing: 1px;
+	line-height: 0.0;
+	text-align:center;
+	font-family:Verdana;
+	text-shadow: 1px 1.5px #2fd442;
+	user-select:none;
+}
+#timedate {
+	color:black;
+	text-align:center;
+	font-family:Lucida Console;
+	letter-spacing: -1.6vw;
+	font-size:13vw;
+	text-shadow: 5px 5px #2fd442;
+	position: relative;
+	animation-name: zegar1;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-direction: alternate;
+	line-height: 0.97;
+	user-select:none;
+	
+}
+
+#cytaty {
+	color:black;
+	font-family:Verdana;
+	font-size:22px;
+	text-align:center;
+	border: solid ;
+	margin:50px 20% 0px 20%;
+	padding:10px;
+	user-select:none;
+	
+}
+
+@keyframes zegar1 {
+  0%   {left:0px; top:0px;}
+  25%  {left:0px; top:20px;}
+  75%  {top:-20px;}
+  100% {top:0px;}
+}
+
+#aktualnosci {
+	color:black;
+	font-family:Lucida Console;
+	font-size:16px;
+	padding:10px;
+}
+
+#ostronie  {
+	color:black;
+	font-family:Lucida Console;
+	font-size:16px;
+	padding:10px;
+}
+#ostronie a:hover {
+	color:pink;	
+	
+}
+#firma {
+	float:left; 
+	margin-right:20px;
+	width:30%;
+	transition: all 6s ease-in-out;
+	user-select:none;
+}
+#firma:hover {
+	filter:contrast(400%) drop-shadow(8px 8px 10px green);
+
+}
+
+@media only screen and (max-width:1081px) {
+  li {
+	width: 50%;
+  }
+  li a {
+	height: 6.5vw;
+	font-size:25px;
+  }
+  
+  #aktualnosci {
+	font-size:1.6em;
+  }
+  #ostronie {
+	font-size:1.6em;
+  }
+  #cytaty {
+	font-size:2em;
+	margin:100px 10% 0px 10%;
+	padding:5px;
+  }
+  #firma {
+	 width:50%
+  }
+	#milisekundnik {
+	margin: 0px 0px 0px 63%
+}
+	#wersja {
+	margin:20px 0px 30px 0px;
+}
+
+}
